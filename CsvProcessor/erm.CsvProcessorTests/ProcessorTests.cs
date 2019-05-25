@@ -22,7 +22,6 @@ namespace erm.CsvProcessorTests
         {
             _loggerMock = new Mock<ILogger<Processor>>();
             _csvParserMock = new Mock<ICsvParser>();
-            _medianProcessorMock = new Mock<IMedianProcessor>();
 
             records = new List<EnergyRecord>();
             records.Add(new EnergyRecord { DataValue = 20.0m, DateTime = "30/12/1899 01:00:00" });
